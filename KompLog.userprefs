@@ -1,0 +1,25 @@
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="KompLog\src\StageDataViewer.cs">
+    <Files>
+      <File FileName="KompLog\src\Calculator.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\StageDataViewer.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\Spreadsheet.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\CelestialBodyData.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\AppLauncher.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\KompLogStyle.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\Equation.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\PartDataViewer.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\Util.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\KompLogsSettings.cs" Line="1" Column="1" />
+      <File FileName="KompLog\LICENSE.md" Line="1" Column="1" />
+      <File FileName="KompLog\README.md" Line="1" Column="1" />
+      <File FileName="KompLog\src\Graph.cs" Line="1" Column="1" />
+      <File FileName="KompLog\src\OrbitData.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

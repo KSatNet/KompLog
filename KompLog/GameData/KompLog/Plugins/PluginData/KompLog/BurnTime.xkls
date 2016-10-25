@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Sheet rows="8" columns="3">
+  <Cell row="0" column="0">Start Mass</Cell>
+  <Cell row="0" column="1">80</Cell>
+  <Cell row="0" column="2">t</Cell>
+  <Cell row="1" column="0">Delta-v</Cell>
+  <Cell row="1" column="1">1085</Cell>
+  <Cell row="1" column="2">m/s</Cell>
+  <Cell row="2" column="0">Isp</Cell>
+  <Cell row="2" column="1">310</Cell>
+  <Cell row="2" column="2">s</Cell>
+  <Cell row="3" column="0">Thrust</Cell>
+  <Cell row="3" column="1">1500</Cell>
+  <Cell row="3" column="2">kN</Cell>
+  <Cell row="5" column="0">Burn Time</Cell>
+  <Cell row="5" column="1">=((B1)*9.81*B3/B4)*(1-e^(-B2/(9.81*B3)))</Cell>
+  <Cell row="5" column="2">s</Cell>
+  <Cell row="6" column="0">Half Burn Time</Cell>
+  <Cell row="6" column="1">=B6/2</Cell>
+  <Cell row="6" column="2">s</Cell>
+  <Cell row="7" column="0">Fuel</Cell>
+  <Cell row="7" column="1">=(B1)-e^(ln(B1)-B2/(9.81*B3))</Cell>
+  <Cell row="7" column="2">t</Cell>
+  <Cell row="8" column="1"></Cell>
+</Sheet>

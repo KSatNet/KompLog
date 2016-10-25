@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Sheet rows="6" columns="3">
+  <Cell row="0" column="0">Engine</Cell>
+  <Cell row="0" column="1">Isp</Cell>
+  <Cell row="0" column="2">Mass</Cell>
+  <Cell row="1" column="0">LV-N</Cell>
+  <Cell row="1" column="1">800</Cell>
+  <Cell row="1" column="2">3</Cell>
+  <Cell row="2" column="0">LV-909</Cell>
+  <Cell row="2" column="1">345</Cell>
+  <Cell row="2" column="2">0.5</Cell>
+  <Cell row="4" column="0">Payload</Cell>
+  <Cell row="4" column="1">0.5</Cell>
+  <Graph graphlines="2" lockx="True" locky="True">
+    <GraphLine line="0" color_r="1" color_g="0" color_b="0">
+      <Equation>=9.81*B2*ln((C2+B5+x)/(C2+B5))</Equation>
+      <XMin>0.5</XMin>
+      <XMax>5</XMax>
+    </GraphLine>
+    <GraphLine line="1" color_r="0" color_g="1" color_b="1">
+      <Equation>=9.81*B3*ln((C3+B5+x)/(C3+B5))</Equation>
+      <XMin>0.5</XMin>
+      <XMax>5</XMax>
+    </GraphLine>
+  </Graph>
+</Sheet>

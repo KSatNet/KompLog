@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{412A03CE-DA0D-4925-85D3-FC54EEA970A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KompLog</RootNamespace>
+    <AssemblyName>KompLog</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>GameData\KompLog\Plugins</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>GameData\KompLog\Plugins</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\Downloads\ksp-win-1-0-5\KSP_win\KSP_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\Downloads\ksp-win-1-0-5\KSP_win\KSP_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\AppLauncher.cs" />
+    <Compile Include="src\Calculator.cs" />
+    <Compile Include="src\CelestialBodyData.cs" />
+    <Compile Include="src\Equation.cs" />
+    <Compile Include="src\Graph.cs" />
+    <Compile Include="src\KSPAddonImproved.cs" />
+    <Compile Include="src\Spreadsheet.cs" />
+    <Compile Include="src\Util.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\KompLogsSettings.cs" />
+    <Compile Include="src\KompLogStyle.cs" />
+    <Compile Include="src\PartDataViewer.cs" />
+    <Compile Include="src\StageDataViewer.cs" />
+    <Compile Include="src\OrbitData.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="LICENSE.md" />
+    <None Include="GameData\KompLog\Plugins\KompLog.dll" />
+    <None Include="GameData\KompLog\Plugins\PluginData\KompLog\BurnTime.xkls" />
+    <None Include="GameData\KompLog\Resources\ScienceDefs.cfg" />
+    <None Include="GameData\KompLog\Textures\sat_calc.png" />
+    <None Include="GameData\KompLog\Textures\Thumbs.db" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="GameData\" />
+    <Folder Include="GameData\KompLog\" />
+  </ItemGroup>
+</Project>
